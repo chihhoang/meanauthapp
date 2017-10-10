@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MEAN Auth App</a>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -16,4 +16,32 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav> -->
+
+<div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/#" class="navbar-brand">MEAN Auth App</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/']">Home</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/register']">Register</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/login']">Login</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
